@@ -3,7 +3,8 @@ const  Note = require('../models/note.js');
 const createNotes = async (req, res) => {
     try {
         //get the sent in data of the req body
-        const {title,body} = req.body.title;
+        const {title,body} = req.body;
+     
        
 
         //create a note

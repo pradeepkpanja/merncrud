@@ -8,6 +8,7 @@ app.use(express.json());
 
 //now server will accept request from any domain ask gpt for more info
 app.use(cors());
+
 //loading env variables
 if(process.env.PORT != "production"){
     require('dotenv').config();
